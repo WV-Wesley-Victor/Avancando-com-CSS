@@ -3,7 +3,7 @@
 
 ![Captura de Tela (48)](https://github.com/WV-Wesley-Victor/Avancando-com-CSS/assets/137107062/f73b21c0-0c92-432d-bbbb-e9a89fec36dc)
  <p align="center">
-  <a href="https://wv-wesley-victor.github.io/Pagina-com-Cards/" target="_blank">Clique aqui para visitar o projeto</a>
+  <a href="https://wv-wesley-victor.github.io/Avancando-com-CSS/" target="_blank">Clique aqui para visitar o projeto</a>
 </p>
 
 ## Descrição
