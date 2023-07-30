@@ -1,0 +1,55 @@
+Este código HTML cria uma página com uma barra de navegação no topo (header), um conteúdo principal (main) e um rodapé (footer). O conteúdo principal contém um parágrafo com o texto "teste". O rodapé contém um parágrafo com o texto "teste 2". Vamos explicar o código em detalhes:
+
+- :root: Define variáveis globais usando a sintaxe --nome-da-variavel: valor;. Neste caso, são definidas duas variáveis:
+
+    --header-height: Definida como 10rem (dez vezes o tamanho padrão da fonte) para representar a altura do header.
+    --main-color: Definida como rgba(255, 0, 0, 0.3), que representa uma cor vermelha com 30% de opacidade (transparência).
+
+- html: Define um tamanho de fonte padrão de 62.5% (10 pixels em uma fonte padrão de 16 pixels), que é frequentemente usado para facilitar a conversão de valores em rem para pixels.
+
+- header: Define o estilo para o cabeçalho da página.
+
+    A largura é definida como 100% para ocupar toda a largura da tela.
+    A cor de fundo é definida como a variável --main-color, que é um vermelho com 30% de opacidade.
+    A altura é definida como a variável --header-height, que foi definida anteriormente como 10rem.
+    O tamanho da fonte é definido como 2rem.
+    É fixado na parte superior da página usando a propriedade position: fixed, para que o cabeçalho permaneça visível mesmo quando o usuário rolar a página.
+    A propriedade top: 0 e left: 0 posiciona o cabeçalho no canto superior esquerdo.
+
+- main: Define o estilo para o conteúdo principal da página.
+
+    Uma nova variável --header-height é definida dentro de main com o valor de 2rem. Isso substitui temporariamente a variável definida em :root, mas apenas dentro do elemento main e seus descendentes.
+    A altura mínima do elemento é calculada usando a função calc(), subtraindo a altura do cabeçalho (var(--header-height)) e 2rem (que representam uma margem superior e inferior) da altura da viewport (100vh).
+    A cor de fundo é definida como #ccc, que representa uma cor cinza claro.
+    O tamanho da fonte é definido como 2rem.
+    O conteúdo principal tem uma margem superior de altura equivalente à variável --header-height, o que fará com que o conteúdo não fique oculto sob o cabeçalho.
+
+- p: Define o estilo para todos os elementos <p> da página.
+
+    A margem superior e inferior é definida usando calc(var(--header-height) * 2), ou seja, o dobro do valor da variável --header-height.
+
+- footer: Define o estilo para o rodapé da página.
+
+    A altura é definida como 10rem usando a variável --header-height.
+    A cor de fundo é definida como a variável --main-color, que é um vermelho com 30% de opacidade.
+    O tamanho da fonte é definido como 2rem.
+
+- *: Estilos aplicados a todos os elementos da página.
+
+    margin: 0: Remove as margens padrão de todos os elementos.
+
+    padding: 0: Remove os preenchimentos padrão de todos os elementos.
+
+    box-sizing: border-box: Define a caixa de modelagem como "border-box" para todos os elementos. Isso faz com que as dimensões (largura e altura) incluam preenchimento e bordas, garantindo que o tamanho total do elemento seja mantido ao aplicar preenchimentos e bordas.
+
+- ul: Define estilos para a lista não ordenada (barra de navegação).
+
+    Os estilos são semelhantes à barra de navegação nos códigos HTML anteriores.
+
+- ul li a: Define estilos para os links (âncoras) dentro dos itens da barra de navegação.
+
+    Os estilos são semelhantes aos links nos códigos HTML anteriores.
+
+O conteúdo principal (main) contém a palavra "main" e um parágrafo com o texto "teste". O rodapé contém a palavra "footer" e um parágrafo com o texto "teste 2".
+
+Ao rolar a página, o cabeçalho permanecerá fixado no topo da viewport devido à propriedade position: fixed, e o conteúdo principal ocupará o espaço restante, ajustando a altura para não se sobrepor ao cabeçalho. O rodapé permanecerá na parte inferior da viewport. A cor de fundo do cabeçalho e do rodapé será um tom de vermelho com 30% de opacidade, conforme definido na variável --main-color.

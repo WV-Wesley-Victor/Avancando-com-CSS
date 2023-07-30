@@ -1,0 +1,71 @@
+Neste código HTML e CSS, temos uma página com uma barra de navegação no topo (header) e um título (h1) seguido de um parágrafo (p). Vamos explicar o código em detalhes:
+
+- @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");: Essa regra de importação de fonte carrega a fonte "Roboto" nos pesos 400 (normal) e 900 (bold) da API de fontes do Google. Isso permite que a fonte Roboto seja usada no documento.
+
+- @font-face { ... }: Esta regra define a fonte personalizada "nadia" usando o @font-face. A fonte personalizada é carregada de vários formatos diferentes: TrueType (ttf), WOFF (woff) e SVG (svg). A ordem dos formatos é importante, pois o navegador tentará usar o primeiro formato suportado.
+
+- h1 { ... }: Estilos aplicados ao elemento <h1>.
+
+    font-family: nadia, Arial, Helvetica, sans-serif;: Define a fonte do título como "nadia" (fonte personalizada definida no @font-face), mas se "nadia" não estiver disponível, a fonte alternativa será "Arial", "Helvetica" e, em último caso, qualquer fonte "sans-serif" do sistema.
+
+    padding: 0 2rem 1rem;: Adiciona 0 de preenchimento superior, 2 rem (20 pixels) de preenchimento horizontal e 1 rem (10 pixels) de preenchimento inferior ao título.
+
+- p { ... }: Estilos aplicados ao elemento <p>.
+
+    font-family: "Roboto", sans-serif;: Define a fonte do parágrafo como "Roboto", mas se "Roboto" não estiver disponível, qualquer fonte "sans-serif" do sistema será usada.
+
+    line-height: 2;: Define o espaçamento entre linhas do parágrafo como 2 vezes o tamanho da fonte, criando um espaçamento maior entre as linhas.
+
+    padding: 0 2rem;: Adiciona 0 de preenchimento superior e inferior e 2 rem (20 pixels) de preenchimento horizontal ao parágrafo.
+
+- * { ... }: Estilos aplicados a todos os elementos da página.
+
+    margin: 0;: Remove as margens padrão de todos os elementos.
+
+    padding: 0;: Remove o preenchimento padrão de todos os elementos.
+
+    box-sizing: border-box;: Define o modelo de caixa de todos os elementos como "border-box", fazendo com que o preenchimento e a borda sejam incluídos na largura e altura total do elemento.
+
+- ul { ... }: Estilos aplicados à lista não ordenada (ul) dentro do corpo da página.
+
+    list-style: none;: Remove os marcadores padrão (pontos) da lista.
+
+    padding: 2rem;: Adiciona espaçamento interno de 2 rem (20 pixels) na lista.
+
+    margin: 0;: Remove as margens padrão da lista.
+
+    display: flex;: Define o layout da lista como flex container, para que os itens da lista sejam dispostos em uma linha flexível.
+
+    align-items: center;: Alinha os itens verticalmente no centro.
+
+    justify-content: center;: Alinha os itens horizontalmente no centro.
+
+    gap: 0.5rem;: Define um espaçamento de 0.5 rem (5 pixels) entre os itens da lista.
+
+    white-space: nowrap;: Impede que os itens da lista sejam quebrados em várias linhas, mantendo-os em uma única linha.
+
+    font-size: 16px;: Define o tamanho da fonte do texto dos itens da lista como 16 pixels.
+
+- ul li a { ... }: Estilos aplicados aos links (âncoras) dentro dos itens da lista.
+
+    display: inline-block;: Define os links como elementos de bloco em linha, permitindo que sejam formatados com largura e altura.
+
+    padding: 10px 20px;: Adiciona espaçamento interno de 10 pixels (vertical) e 20 pixels (horizontal) nos links.
+
+    text-decoration: none;: Remove a decoração de sublinhado dos links.
+
+    color: #333;: Define a cor do texto dos links como cinza escuro (#333).
+
+    background-color: #f5f5f5;: Define a cor de fundo dos links como cinza claro (#f5f5f5).
+
+    border-radius: 5px;: Define bordas arredondadas nos links com raio de 5 pixels.
+
+    margin-bottom: 5px;: Adiciona um pequeno espaçamento inferior de 5 pixels entre os links.
+
+    transition: background-color 0.3s ease;: Adiciona uma transição suave de 0.3 segundos na cor de fundo dos links ao passar o mouse sobre eles.
+
+    ul li a:hover { ... }: Estilos aplicados aos links quando o mouse está sobre eles (estado de hover).
+
+    background-color: #ddd;: Define a cor de fundo dos links como cinza mais claro (#ddd) ao passar o mouse sobre eles.
+
+Esses estilos combinados criam uma página com uma barra de navegação no topo, um título "Font-face" usando a fonte personalizada "nadia" e um parágrafo com texto lorem ipsum usando a fonte "Roboto". Os links na barra de navegação têm um efeito de hover que escurece a cor de fundo quando o mouse está sobre eles. O tamanho da fonte é definido como 16 pixels para os itens da lista e 2 rem (20 pixels) para o título e o parágrafo. A página tem um layout responsivo e se ajusta a diferentes tamanhos de tela.

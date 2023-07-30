@@ -1,0 +1,81 @@
+Neste código HTML e CSS, temos uma página com uma barra de navegação no topo (header) e um título <h1> com o texto "Text shadow". Vamos explicar o código em detalhes:
+
+- h1 { ... }: Estilos aplicados ao elemento <h1>.
+
+    font-family: Arial, Helvetica, sans-serif;: Define a fonte do título como "Arial", "Helvetica" e, em último caso, qualquer fonte "sans-serif" do sistema.
+
+    text-align: center;: Centraliza o texto dentro do elemento <h1>.
+
+    margin-top: 100px;: Adiciona uma margem superior de 100 pixels ao título, empurrando-o para baixo da barra de navegação.
+
+    text-transform: uppercase;: Transforma o texto do título para letras maiúsculas.
+
+    font-weight: bold;: Define o peso da fonte como negrito.
+
+    font-size: 3em;: Define o tamanho da fonte do título como 3 vezes o tamanho da fonte padrão.
+
+    color: rgb(199, 199, 199);: Define a cor do texto do título como cinza claro (RGB: 199, 199, 199).
+
+    text-shadow: ...;: Adiciona sombras de texto ao título. Neste caso, foram definidos vários text-shadows para criar um efeito de sombra em cascata:
+
+    -1px 1px 0 rgba(0, 0, 0, 0.9) cria uma sombra deslocada para cima e à esquerda com desfoque 0.9 e cor preta (RGB: 0, 0, 0) e opacidade 0.9.
+
+    -2px 2px 0 rgba(0, 0, 0, 0.7) cria uma sombra deslocada para cima e à esquerda com desfoque 0.7 e cor preta (RGB: 0, 0, 0) e opacidade 0.7.
+
+    -3px 3px 0 rgba(0, 0, 0, 0.5) cria uma sombra deslocada para cima e à esquerda com desfoque 0.5 e cor preta (RGB: 0, 0, 0) e opacidade 0.5.
+
+    -4px 4px 0 rgba(0, 0, 0, 0.3) cria uma sombra deslocada para cima e à esquerda com desfoque 0.3 e cor preta (RGB: 0, 0, 0) e opacidade 0.3.
+
+    -5px 5px 0 rgba(0, 0, 0, 0.1) cria uma sombra deslocada para cima e à esquerda com desfoque 0.1 e cor preta (RGB: 0, 0, 0) e opacidade 0.1.
+
+    Essas sombras criam um efeito de profundidade no título, com várias camadas de sombra.
+
+- * { ... }: Estilos aplicados a todos os elementos da página.
+
+    margin: 0;: Remove as margens padrão de todos os elementos.
+
+    padding: 0;: Remove o preenchimento padrão de todos os elementos.
+
+    box-sizing: border-box;: Define o modelo de caixa de todos os elementos como "border-box", fazendo com que o preenchimento e a borda sejam incluídos na largura e altura total do elemento.
+
+- ul { ... }: Estilos aplicados à lista não ordenada (ul) dentro do corpo da página.
+
+    list-style: none;: Remove os marcadores padrão (pontos) da lista.
+
+    padding: 2rem;: Adiciona espaçamento interno de 2 rem (20 pixels) na lista.
+
+    margin: 0;: Remove as margens padrão da lista.
+
+    display: flex;: Define o layout da lista como flex container, para que os itens da lista sejam dispostos em uma linha flexível.
+
+    align-items: center;: Alinha os itens verticalmente no centro.
+
+    justify-content: center;: Alinha os itens horizontalmente no centro.
+
+    gap: 0.5rem;: Define um espaçamento de 0.5 rem (5 pixels) entre os itens da lista.
+
+    white-space: nowrap;: Impede que os itens da lista sejam quebrados em várias linhas, mantendo-os em uma única linha.
+
+- ul li a { ... }: Estilos aplicados aos links (âncoras) dentro dos itens da lista.
+
+    display: inline-block;: Define os links como blocos de nível de linha, permitindo que tenham largura e altura ajustáveis.
+
+    padding: 10px 20px;: Adiciona espaçamento interno de 10 pixels na parte superior e inferior e 20 pixels nas laterais dos links.
+
+    text-decoration: none;: Remove a decoração de texto padrão (sublinhado) dos links.
+
+    color: #333;: Define a cor do texto dos links como cinza escuro (#333).
+
+    background-color: #f5f5f5;: Define a cor de fundo dos links como cinza claro (#f5f5f5).
+
+    border-radius: 5px;: Adiciona um raio de borda de 5 pixels aos links, arredondando os cantos.
+
+    margin-bottom: 5px;: Adiciona um espaçamento inferior de 5 pixels aos links para separá-los verticalmente.
+
+    transition: background-color 0.3s ease;: Adiciona uma transição suave de 0.3 segundos na cor de fundo dos links ao passar o mouse sobre eles.
+
+- ul li a:hover { ... }: Estilos aplicados aos links quando o mouse está sobre eles (estado de hover).
+
+    background-color: #ddd;: Define a cor de fundo dos links como cinza mais claro (#ddd) ao passar o mouse sobre eles.
+
+Neste código, temos um layout responsivo e uma barra de navegação com links para diferentes páginas. O título "Text shadow" usa um efeito de sombra em cascata para criar uma aparência tridimensional. Os itens da lista têm um efeito de hover que escurece a cor de fundo quando o mouse está sobre eles.

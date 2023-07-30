@@ -1,0 +1,151 @@
+Neste código HTML e CSS, temos uma página com uma barra de navegação no topo (header) e várias caixas com diferentes unidades de medidas aplicadas. Vamos explicar o código em detalhes:
+
+- html { ... }: Estilos aplicados ao elemento <html>.
+
+    font-size: 62.5%;: Define o tamanho de fonte padrão como 62.5% da fonte do navegador. Essa definição é comum para facilitar o uso de unidades de medida em "rem" (root em) com valores mais fáceis de calcular.
+
+    padding-bottom: 550px;: Adiciona um preenchimento na parte inferior da página de 550 pixels. Isso é usado para criar um espaço vazio abaixo do conteúdo da página.
+
+- h1 { ... }: Estilos aplicados ao elemento <h1>.
+
+    font-size: 3.4em;: Define o tamanho de fonte do cabeçalho <h1> como 3.4 vezes o tamanho de fonte padrão (62.5% da fonte do navegador). Isso resultará em um tamanho de fonte maior.
+
+- b { ... }: Estilos aplicados ao elemento <b> (texto em negrito).
+
+    color: red;: Define a cor do texto em negrito como vermelho.
+
+    font-size: 1em;: Define o tamanho de fonte do texto em negrito como 1 vez o tamanho de fonte padrão (62.5% da fonte do navegador).
+
+    font-size: 3rem;: Substitui o tamanho de fonte anterior por 3 rem (30 pixels). Isso tornará o texto em negrito maior do que o tamanho de fonte padrão.
+
+    font-size: 50%;: Substitui novamente o tamanho de fonte, reduzindo-o para 50% do tamanho de fonte padrão (31.25% da fonte do navegador). Isso fará com que o texto em negrito seja menor que o tamanho de fonte padrão.
+
+- p { ... }: Estilos aplicados ao elemento <p> (parágrafo).
+
+    font-size: 3em;: Define o tamanho de fonte do parágrafo como 3 vezes o tamanho de fonte padrão (62.5% da fonte do navegador). Isso resultará em um tamanho de fonte maior.
+
+    width: 10em;: Define a largura do parágrafo como 10 em (equivalente a 100 pixels, considerando o tamanho de fonte padrão).
+
+    background-color: #ccc;: Define a cor de fundo do parágrafo como cinza claro (#ccc).
+
+- .porcentagem { ... }: Estilos aplicados à classe .porcentagem.
+
+    width: 60%;: Define a largura do elemento com a classe .porcentagem como 60% da largura do elemento pai.
+
+    height: 500px;: Define a altura do elemento com a classe .porcentagem como 500 pixels.
+
+    background-color: yellow;: Define a cor de fundo do elemento com a classe .porcentagem como amarelo.
+
+- .porcentagem p { ... }: Estilos aplicados ao parágrafo dentro do elemento com a classe .porcentagem.
+
+    background-color: orange;: Define a cor de fundo do parágrafo como laranja.
+
+    padding-top: 50%;: Define o preenchimento na parte superior do parágrafo como 50% da altura do elemento pai. Isso fará com que o texto seja exibido no meio vertical do elemento com a classe .porcentagem.
+
+    width: 50%;: Define a largura do parágrafo como 50% da largura do elemento pai.
+
+    font-size: 1rem;: Define o tamanho de fonte do parágrafo como 1 vez o tamanho de fonte padrão (62.5% da fonte do navegador).
+
+- .padding-em { ... }: Estilos aplicados à classe .padding-em.
+
+    background-color: red;: Define a cor de fundo do elemento com a classe .padding-em como vermelho.
+
+- .padding-em p { ... }: Estilos aplicados ao parágrafo dentro do elemento com a classe .padding-em.
+
+    background-color: transparent;: Define a cor de fundo do parágrafo como transparente (sem cor de fundo).
+
+    margin: 0;: Remove as margens padrão do parágrafo.
+
+    padding: 1em;: Define o preenchimento do parágrafo como 1 em (equivalente a 10 pixels, considerando o tamanho de fonte padrão).
+
+    font-size: 30px;: Define o tamanho de fonte do parágrafo como 30 pixels.
+
+- .viewport-container { ... }: Estilos aplicados à classe .viewport-container.
+
+    font-size: 3rem;: Define o tamanho de fonte do elemento com a classe .viewport-container como 3 vezes o tamanho de fonte padrão (62.5% da fonte do navegador).
+
+    height: auto;: Define a altura do elemento com a classe .viewport-container como "auto", permitindo que seu tamanho seja ajustado automaticamente conforme o conteúdo.
+
+- .viewport { ... }: Estilos aplicados à classe .viewport.
+
+    width: 90vw;: Define a largura do elemento com a classe .viewport como 90% da largura da janela de visualização (viewport).
+
+    height: 90vh;: Define a altura do elemento com a classe .viewport como 90% da altura da janela de visualização (viewport).
+
+    background-color: rgba(0, 0, 255, 0.477);: Define a cor de fundo do elemento com a classe .viewport como azul transparente.
+
+- .em { ... }: Estilos aplicados à classe .em.
+
+    width: 20em;: Define a largura do elemento com a classe .em como 20 em (equivalente a 200 pixels, considerando o tamanho de fonte padrão).
+
+    padding: 1em;: Define o preenchimento do elemento com a classe .em como 1 em (equivalente a 10 pixels, considerando o tamanho de fonte padrão).
+
+    margin: 1em;: Define a margem do elemento com a classe .em como 1 em (equivalente a 10 pixels, considerando o tamanho de fonte padrão).
+
+    background-color: orange;: Define a cor de fundo do elemento com a classe .em como laranja.
+
+    font-size: 2em;: Define o tamanho de fonte do elemento com a classe .em como 2 vezes o tamanho de fonte padrão (62.5% da fonte do navegador).
+
+- .ch { ... }: Estilos aplicados à classe .ch.
+
+    width: 20ch;: Define a largura do elemento com a classe .ch como 20 caracteres (dependendo do tamanho da fonte, pode variar).
+
+    width: 180px;: Substitui a largura anterior por 180 pixels, definindo uma largura fixa.
+
+    padding: 1em;: Define o preenchimento do elemento com a classe .ch como 1 em (equivalente a 10 pixels, considerando o tamanho de fonte padrão).
+
+    margin: 1em;: Define a margem do elemento com a classe .ch como 1 em (equivalente a 10 pixels, considerando o tamanho de fonte padrão).
+
+    background-color: orange;: Define a cor de fundo do elemento com a classe .ch como laranja.
+
+    font-size: 3em;: Define o tamanho de fonte do elemento com a classe .ch como 3 vezes o tamanho de fonte padrão (62.5% da fonte do navegador).
+
+- * { ... }: Estilos aplicados a todos os elementos da página.
+
+    margin: 0;: Remove as margens padrão de todos os elementos.
+
+    padding: 0;: Remove os preenchimentos padrão de todos os elementos.
+
+    box-sizing: border-box;: Define a caixa de modelagem como "border-box" para todos os elementos. Isso faz com que as dimensões (largura e altura) incluam preenchimento e bordas, garantindo que o tamanho total do elemento seja mantido ao aplicar preenchimentos e bordas.
+
+- ul { ... }: Estilos aplicados à lista não ordenada (barra de navegação).
+
+    list-style: none;: Remove os marcadores de lista padrão (pontos) da barra de navegação.
+
+    padding: 32px;: Adiciona um preenchimento de 32 pixels na parte superior e inferior da barra de navegação.
+
+    display: flex;: Define o layout da barra de navegação como flexível.
+
+    align-items: center;: Centraliza verticalmente os itens da barra de navegação.
+
+    justify-content: center;: Centraliza horizontalmente os itens da barra de navegação.
+
+    gap: 8px;: Adiciona um espaço de 8 pixels entre os itens da barra de navegação.
+
+    white-space: nowrap;: Impede que os itens da barra de navegação sejam quebrados em várias linhas, mantendo-os em uma única linha.
+
+    font-size: 16px;: Define o tamanho de fonte dos itens da barra de navegação como 16 pixels.
+
+- ul li a { ... }: Estilos aplicados aos links (âncoras) dentro dos itens da barra de navegação.
+
+    display: inline-block;: Define os links como blocos de nível de linha, permitindo que tenham largura e altura ajustáveis.
+
+    padding: 10px 20px;: Adiciona espaçamento interno de 10 pixels na parte superior e inferior e 20 pixels nas laterais dos links.
+
+    text-decoration: none;: Remove a decoração de texto padrão (sublinhado) dos links.
+
+    color: #333;: Define a cor do texto dos links como cinza escuro (#333).
+
+    background-color: #f5f5f5;: Define a cor de fundo dos links como cinza claro (#f5f5f5).
+
+    border-radius: 5px;: Adiciona um raio de borda de 5 pixels aos links, arredondando os cantos.
+
+    margin-bottom: 5px;: Adiciona um espaçamento inferior de 5 pixels entre os links.
+
+    transition: background-color 0.3s ease;: Adiciona uma transição suave de 0.3 segundos na cor de fundo dos links quando ocorre a interação do mouse.
+
+- ul li a:hover { ... }: Estilos aplicados aos links quando estão sendo "hovered" (quando o cursor do mouse está sobre eles).
+
+    background-color: #ddd;: Define a cor de fundo dos links como cinza mais claro (#ddd) quando estão sendo "hovered".
+
+Esse código cria uma página com uma barra de navegação no topo e várias caixas com diferentes exemplos de unidades de medidas aplicadas, como porcentagem (%), "em" (tamanho relativo ao tamanho da fonte) e "ch" (largura de caracteres). Cada exemplo é explicado por meio de comentários no código.

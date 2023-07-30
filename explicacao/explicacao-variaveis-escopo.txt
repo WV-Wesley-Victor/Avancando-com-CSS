@@ -1,0 +1,63 @@
+Este código HTML cria uma página com uma barra de navegação no topo e duas divs dentro de uma div com a classe "container". Além disso, há um parágrafo ("teste") fora da div "container". Vamos explicar o código em detalhes:
+
+- html: Define estilos globais para a página HTML. Neste caso, o tamanho de fonte padrão é aumentado para 200%.
+
+- :root: Define uma variável global chamada "--color" com o valor "red" (vermelho). Essa variável pode ser usada em qualquer parte da página.
+
+- .container: Define uma classe chamada "container" e dentro dela é definida outra variável "--color" com o valor "orange" (laranja). Essa variável "--color" substituirá a variável definida em :root para qualquer elemento com a classe "container" e seus descendentes.
+
+- p: Define o estilo do parágrafo. A cor do texto é definida usando a propriedade "var(--color)", que usará o valor da variável "--color" definida no escopo mais próximo (nesse caso, a classe ".container"). Portanto, o texto do parágrafo dentro da div "container" será laranja, e o texto do parágrafo fora da div "container" será vermelho.
+
+.- div1: Define uma classe chamada "div1". Dentro dela é definida outra variável "--color" com o valor "green" (verde). Essa variável "--color" substituirá as variáveis definidas em :root e .container para qualquer elemento com a classe "div1" e seus descendentes.
+
+- *: Estilos aplicados a todos os elementos da página.
+
+    margin: 0;: Remove as margens padrão de todos os elementos.
+
+    padding: 0;: Remove os preenchimentos padrão de todos os elementos.
+
+    box-sizing: border-box;: Define a caixa de modelagem como "border-box" para todos os elementos. Isso faz com que as dimensões (largura e altura) incluam preenchimento e bordas, garantindo que o tamanho total do elemento seja mantido ao aplicar preenchimentos e bordas.
+
+- ul: Define estilos para a lista não ordenada (barra de navegação).
+
+    list-style: none;: Remove os marcadores de lista padrão (pontos) da barra de navegação.
+
+    padding: 32px;: Adiciona um preenchimento de 32 pixels na parte superior e inferior da barra de navegação.
+
+    display: flex;: Define o layout da barra de navegação como flexível.
+
+    align-items: center;: Centraliza verticalmente os itens da barra de navegação.
+
+    justify-content: center;: Centraliza horizontalmente os itens da barra de navegação.
+
+    gap: 8px;: Adiciona um espaço de 8 pixels entre os itens da barra de navegação.
+
+    white-space: nowrap;: Impede que os itens da barra de navegação sejam quebrados em várias linhas, mantendo-os em uma única linha.
+
+    font-size: 16px;: Define o tamanho de fonte dos itens da barra de navegação como 16 pixels.
+
+- ul li a: Define estilos para os links (âncoras) dentro dos itens da barra de navegação.
+
+    display: inline-block;: Define os links como blocos de nível de linha, permitindo que tenham largura e altura ajustáveis.
+
+    padding: 10px 20px;: Adiciona espaçamento interno de 10 pixels na parte superior e inferior e 20 pixels nas laterais dos links.
+
+    text-decoration: none;: Remove a decoração de texto padrão (sublinhado) dos links.
+
+    color: #333;: Define a cor do texto dos links como cinza escuro (#333).
+
+    background-color: #f5f5f5;: Define a cor de fundo dos links como cinza claro (#f5f5f5).
+
+    border-radius: 5px;: Adiciona um raio de borda de 5 pixels aos links, arredondando os cantos.
+
+    margin-bottom: 5px;: Adiciona um espaçamento inferior de 5 pixels entre os links.
+
+    transition: background-color 0.3s ease;: Adiciona uma transição suave de 0.3 segundos na cor de fundo dos links quando ocorre a interação do mouse.
+
+- ul li a:hover: Define estilos para os links quando estão sendo "hovered" (quando o cursor do mouse está sobre eles).
+
+    background-color: #ddd;: Define a cor de fundo dos links como cinza mais claro (#ddd) quando estão sendo "hovered".
+
+Nas divs com as classes "div1" e "div2" dentro da div "container", não foram adicionados estilos específicos, então eles herdarão a cor do texto definida no escopo mais próximo que contém uma variável "--color". Portanto, o texto dentro da div "div1" será verde e o texto dentro da div "div2" será laranja, pois herdam as variáveis "--color" definidas em .div1 e .container, respectivamente.
+
+Fora da div "container", o texto do parágrafo terá a cor vermelha, pois herda a variável "--color" definida em :root.
