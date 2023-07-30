@@ -1,0 +1,2 @@
+# Avancando com CSS
+ Este é um repositório no GitHub que explora dicas e técnicas avançadas de CSS, abordando diversos conceitos para elevar suas habilidades em design e estilização de páginas web. Através deste projeto, você aprenderá a utilizar recursos mais avançados do CSS para criar efeitos impressionantes, layouts sofisticados e animações envolventes. Eleve o nível dos seus projetos web com as técnicas apresentadas aqui!
